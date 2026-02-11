@@ -1,0 +1,18 @@
+ALGORITMO calculadora_lanchonete
+
+DECLARE qtdHamburguer, qtdRefri, qtdBatata, resultado: numérico
+
+ESCREVA("Quantidade de Hamburguer: ")
+LEIA(qtdHamburguer)
+
+ESCREVA("Quantidade de Refrigerante: ")
+LEIA(qtdRefri)
+
+ESCREVA("Quantidade de Porções de batata: ")
+LEIA(qtdBatata)
+
+resultado = (18 * qtdHamburguer) + (6 * qtdRefri) + (9 * qtdBatata)
+
+ESCREVA("Total da sua conta é: ", resultado)
+
+FIM_ALGORITMO
