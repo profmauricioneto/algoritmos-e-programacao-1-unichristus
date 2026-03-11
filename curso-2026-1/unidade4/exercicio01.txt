@@ -1,0 +1,13 @@
+ALGORITMO CONTAGEM_PARES
+
+DECLARE CONT_PAR, i, num: NUMERICOS
+
+CONT_PAR <- 0
+PARA i <- 1 ATE 5 FACA [PASSO 1]
+INICIO
+    ESCREVA "Digite um valor: "
+    LEIA num
+    SE num % 2 = 0 ENTAO
+        CONT_PAR = CONT_PAR + 1
+FIM
+ESCREVA "Quantidade de pares = " + CONT_PAR
