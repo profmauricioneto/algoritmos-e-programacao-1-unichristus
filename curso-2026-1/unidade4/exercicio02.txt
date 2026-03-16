@@ -1,0 +1,17 @@
+ALGORIMO fatorial
+
+DECLARE i, num, fat: NUMERICOS
+
+INICIO
+    ESCREVA "Digite o número: "
+    LEIA num
+    SE num < 0 ENTAO
+        ESCREVA "Não possível calcular o fatorial de negativos!"
+    SENAO
+        INICIO
+            fat <- 1
+            PARA i <- 1 ATE num FACA [PASSO 1]
+                fat <- fat * i
+            ESCREVA "Fatorial = " + fat
+      FIM
+FIM
