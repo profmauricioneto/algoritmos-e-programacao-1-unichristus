@@ -1,0 +1,11 @@
+# Usando a estrutura PARA, peça para o usuário entrar com um número inteiro maior que zero e calcule o fatorial desse número
+
+# FACA EM PYTHON
+num = int(input("Digite um valor inteiro: "))
+if num < 0:
+    print("gNão é possível calcular o valor de fatorial negativo!")
+else:
+    fat = 1
+    for i in range(1, num + 1):
+        fat = fat*i
+    print(f"Fatorial = {fat}")

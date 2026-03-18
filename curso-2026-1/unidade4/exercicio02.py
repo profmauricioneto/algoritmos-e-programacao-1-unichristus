@@ -3,7 +3,7 @@
 # FACA EM PYTHON
 num = int(input("Digite um valor inteiro: "))
 if num < 0:
-    print("Não é possível calcular o valor de fatorial negativo!")
+    print("gNão é possível calcular o valor de fatorial negativo!")
 else:
     fat = 1
     contador = 1
