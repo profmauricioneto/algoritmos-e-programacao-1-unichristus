@@ -1,0 +1,17 @@
+ALGORITMO atualizacao_preco
+
+DECLARE preco_antigo, preco_atualizado: NUMERICO
+
+INICIO
+    ESCREVE "Digite o valor do preco antigo: "
+    LEIA(preco_antigo)
+
+    SE (preco_antigo <= 50) ENTAO
+        preco_atualizado = preco_antigo*1.05
+    SENAO SE (preco_antigo > 50 e preco_antigo <= 100) ENTAO
+        preco_atualizado = preco_antigo*1.1
+    SENAO
+        preco_atualizado = preco_antigo*1.15
+    
+    ESCREVE "Valor do Preço Atualizado: " + preco_atualizado
+FIM

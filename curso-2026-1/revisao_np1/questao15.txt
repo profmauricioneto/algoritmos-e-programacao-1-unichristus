@@ -1,0 +1,29 @@
+ALGORITMO media_aluno
+
+DECLARE avalicao, laboratorio, exame, media: NUMERICO (REAL)
+        peso_avaliacao, peso_laboratorio, peso_exame: NUMERICO (INTEIRO)
+
+INICIO
+    peso_avaliacao = 3
+    peso_exame = 5
+    peso_laboratorio = 2
+
+    ESCREVA "Digite a nota do Laboratório: "
+    LEIA(laboratorio)
+    ESCREVA "Digite a nota do Avaliacao: "
+    LEIA(avalicao)
+    ESCREVA "Digite a nota do Exame: "
+    LEIA(exame)
+
+    media = (avalicao*peso_avaliacao + laboratorio*peso_laboratorio + exame*peso_exame)/(peso_avaliacao + peso_exame + peso_laboratorio)
+    
+    ESCREVA "Media = ", media
+
+    SE (media < 3) ENTAO
+        ESCREVA "Reprovado"
+    SENAO SE (media >= 3) e (media < 5):
+        ESCREVA "Recuperacao"
+    SENAO
+        ESCREVA "Aprovado"
+
+FIM

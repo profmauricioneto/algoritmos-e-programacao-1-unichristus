@@ -1,0 +1,32 @@
+ALGORITMO calculadora_basica
+
+DECLARE opcao: NUMERICO (INTEIRA)
+        num1, num2, resultado: NUMERICO (REAL)
+
+INICIO
+ESCREVE "Digite uma das opcoes [1 - somar, 2 - subtrair, 3 - multiplicar e 4 - dividir]: "
+LEIA (opcao)
+
+ESCREVA "Digite o primeiro valor: "
+LEIA(num1)
+ESCREVA "Digite o segundo valor: "
+LEIA(num2)
+
+resultado = 0
+SE (opcao = 1) ENTAO
+    resultado = num1 + num2
+SENAO SE (opcao = 2) ENTAO
+    resultado = num1 - num2
+SENAO SE (opcao = 3) ENTAO
+    resultado = num1 * num2
+SENAO SE (opcao = 4) ENTAO
+    SE (num2 = 0) ENTAO
+        ESCREVA "nao existe divisão por zero"
+    SENAO
+        resultado = num1/num2
+SENAO
+    ESCREVA "Opção Inválida!"
+
+ESCREVA "Valor da Operação = " + resultado
+
+FIM
