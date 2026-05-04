@@ -1,0 +1,23 @@
+ALGORITMO verificar_primo
+    DECLARE i, j: INTEIRO
+            numeros[9]: INTEIRO
+            eh_primo: LOGICO
+    PARA i <- 0 ATE 9 FAÇA:
+        INICIO
+            ESCREVA "Digite um número inteiro: "
+            LEIA numeros[i]
+        FIM
+    
+    eh_primo = verdade
+    PARA i <- 0 ATE 9 FAÇA:
+    INICIO
+        PARA j <- 2 ATE numeros[i] - 1:
+            SE numeros[i] % j = 0:
+                eh_primo = falso
+
+        SE eh_primo = verdeiro:
+            ESCREVA "Valor Primo"
+        SENAO
+            ESCREVA "Valor Não Primo"
+    FIM
+FIM_ALGORITMO

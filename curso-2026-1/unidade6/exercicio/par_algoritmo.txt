@@ -1,0 +1,13 @@
+ALGORITMO pares_array
+    DECLARE i : INTEIRO
+            numeros[5]: INTEIRO
+    INICIO
+        PARA i <- 0 ATÉ 4 FAÇA
+        INICIO
+            ESCREVA "digite um valor inteiro: "
+            LEIA numeros[i]
+            SE numeros[i] % 2 = 0:
+                ESCREVA "Numero par: ", numeros[i], "posição:  ", i
+        FIM
+    FIM    
+FIM_ALGORITMO
