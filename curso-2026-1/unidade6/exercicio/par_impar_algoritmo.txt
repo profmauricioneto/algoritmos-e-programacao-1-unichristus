@@ -1,0 +1,27 @@
+ALGORITMO
+
+DECLARE i, cont_par, cont_impar : INTEIRO
+        valores[10] : INTEIRO
+    
+    cont_impar = 0
+    cont_par = 0
+    PARA i <- 0 ATE 9 FAÇA
+    INICIO
+        ESCREVA "Digite um valor inteiro: "
+        LEIA valores[i]
+
+        SE (valores[i] % 2 = 0) ENTAO
+        INICIO
+            cont_par = cont_par + 1
+            ESCREVA "Valor ", valores[i], " é par!"
+        FIM
+        SENAO
+        INICIO
+            cont_impar = cont_impar + 1
+            ESCREVA "Valor ", valores[i], " é ímpar!"
+        FIM
+    FIM
+    ESCREVA "Quantidade de pares: ", cont_par
+    ESCREVA "Quantidade de ímpares: ", cont_impar
+
+FIM_ALGORITMO

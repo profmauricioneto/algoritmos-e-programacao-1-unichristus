@@ -1,0 +1,18 @@
+ALGORITMO
+
+DECLARE salario : REAL
+        valores_produtos[10] : REAL
+        quantidade_vendidos[10] : INTEIRO
+        i : INTEIRO
+
+    PARA i <- 0 ATE 9 FAÇA
+    INICIO
+        ESCREVA "Digite o valor do produto: "
+        LEIA valores_produtos[i]
+
+        ESCREVA "Digite a quantidade vendida: "
+        LEIA quantidade_vendidos[i]
+    FIM
+    ...
+
+FIM_ALGORITMO

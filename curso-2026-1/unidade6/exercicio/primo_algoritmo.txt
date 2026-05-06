@@ -2,14 +2,14 @@ ALGORITMO verificar_primo
     DECLARE i, j: INTEIRO
             numeros[9]: INTEIRO
             eh_primo: LOGICO
-    PARA i <- 0 ATE 9 FAÇA:
+    PARA i <- 0 ATE 8 FAÇA:
         INICIO
             ESCREVA "Digite um número inteiro: "
             LEIA numeros[i]
         FIM
     
+    PARA i <- 0 ATE 8 FAÇA:
     eh_primo = verdade
-    PARA i <- 0 ATE 9 FAÇA:
     INICIO
         PARA j <- 2 ATE numeros[i] - 1:
             SE numeros[i] % j = 0:
