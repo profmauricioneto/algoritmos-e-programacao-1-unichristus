@@ -1,10 +1,11 @@
 ALGORITMO
 
-DECLARE salario : REAL
+DECLARE salario, total_vendidos : REAL
         valores_produtos[10] : REAL
         quantidade_vendidos[10] : INTEIRO
-        i : INTEIRO
+        i, mais_vendido, indice_mais_vendido : INTEIRO
 
+    total_vendidos = 0
     PARA i <- 0 ATE 9 FAÇA
     INICIO
         ESCREVA "Digite o valor do produto: "
@@ -12,7 +13,28 @@ DECLARE salario : REAL
 
         ESCREVA "Digite a quantidade vendida: "
         LEIA quantidade_vendidos[i]
+
+        total_vendidos = total_vendidos + valores_produtos[i]*quantidade_vendidos[i]
     FIM
-    ...
+    salario = 545 + 0.05*total_vendidos
+
+    mais_vendido = quantidade_vendidos[0]
+    indice_mais_vendido = 0
+    PARA i <- 0 ATE 9 FAÇA
+    INICIO
+        ESCREVA "Valor Unitário do Produto: ", valores_produtos[i]
+        ESCREVA "Quantidade Vendida: ", quantidade_vendidos[i]
+        ESCREVA "Valor total deste Produto: ", valores_produtos[i]*quantidade_vendidos[i]
+
+        SE mais_vendido < quantidade_vendidos[i] ENTAO
+        INICIO
+            mais_vendido = quantidade_vendidos[i]
+            indice_mais_vendido = i
+        FIM
+    FIM
+    ESCREVA "Valor Total das Vendas do dia: ", total_vendidos
+    ESCREVA "Valor da Comissão do Vendedor: ", salario
+    ESCREVA "Quantidade de Produto mais vendido: ", mais_vendido
+    ESCREVA "Indice do produto mais vendido: ", indice_mais_vendido
 
 FIM_ALGORITMO

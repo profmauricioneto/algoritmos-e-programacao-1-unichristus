@@ -1,0 +1,19 @@
+ALGORITMO estoque
+
+DECLARE
+    codigos_produtos[10], quantidade_produto_estoque[10]: INTEIRO
+    i, codigo_cliente, codigo_produto, quantidade : INTEIRO
+    
+    REPITA
+        ESCREVA "Digite o código do cliente: "
+        LEIA codigo_cliente
+
+        ESCREVA "Digite o código do Produto: "
+        LEIA codigo_produto
+
+        ESCREVA "Digite a quantidade requerida: "
+        LEIA quantidade
+        ...
+    ATE (codigo_cliente = 0)
+
+FIM_ALGORITMO
