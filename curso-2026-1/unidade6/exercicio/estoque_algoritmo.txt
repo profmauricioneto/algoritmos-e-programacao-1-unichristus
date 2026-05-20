@@ -1,9 +1,19 @@
-ALGORITMO estoque
+ALGORITMO 'estoque'
 
 DECLARE
     codigos_produtos[10], quantidade_produto_estoque[10]: INTEIRO
-    i, codigo_cliente, codigo_produto, quantidade : INTEIRO
-    
+    i, codigo_cliente, codigo_produto, quantidade, indice_produto : INTEIRO
+    existeCodigo: LOGICO
+
+    TODO: PREENCHER OS VETORES
+    PARA i <- 1 ATE 10 FACA:
+        ESCREVA "Digite o codigo do produto: "
+        LEIA codigos_produtos[i]
+
+        ESCREVA "Digite a quantidade desse produto: "
+        LEIA quantidade_produto_estoque[i]
+    FIM_PARA
+
     REPITA
         ESCREVA "Digite o código do cliente: "
         LEIA codigo_cliente
@@ -13,7 +23,29 @@ DECLARE
 
         ESCREVA "Digite a quantidade requerida: "
         LEIA quantidade
-        ...
-    ATE (codigo_cliente = 0)
+
+        existeCodigo = falso
+        FOR i <- 1 ATE 10 FACA:
+            SE (codigos_produtos[i] = codigo_produto) ENTAO
+                existeCodigo = verdade
+                indice_produto = i
+            FIM_SE
+        FIM_PARA
+
+        SE (existeCodigo = verdade) ENTAO
+            IF (quantidade_produto_estoque[indice_produto] <= quantidade) ENTAO
+                ESCREVA "pedido atendido! Volte sempre!"
+                quantidade_produto_estoque[indice_produto] = quantidade_produto_estoque[indice_produto] - quantidade
+            SENAO
+                ESCREVA "Naon temos estoque suficiente dessa mercadoria!"
+        SENAO
+            ESCREVA "Codigo Inexistente"
+     ATE (codigo_cliente = 0)
+
+    PARA i <- 1 ATE 10 FACA:
+        ESCREVA "Codigo Produto: ", codigos_produtos[i]
+
+        ESCREVA "Quantidade: ", quantidade_produto_estoque[i]
+    FIM_PARA
 
 FIM_ALGORITMO
