@@ -13,7 +13,8 @@ DECLARE
         ESCREVA "Digite a quantidade desse produto: "
         LEIA quantidade_produto_estoque[i]
     FIM_PARA
-
+    
+    
     REPITA
         ESCREVA "Digite o código do cliente: "
         LEIA codigo_cliente
