@@ -1,0 +1,23 @@
+ALGORITMO 'matriz_maior_valor'
+    DECLARE:
+        m[2, 2], maior: REAL
+        i, j : INTEIRO
+INICIO
+    PARA i <- 1 ATE 2 FACA:
+        PARA j <- 1 ATE 2 FACA:
+            ESCREVA "Digite o valor ", i, j
+            LEIA (m[i, j])
+        FIM_PARA
+    FIM_PARA
+
+    maior <- m[1, 1]
+    PARA i <- 1 ATE 2 FACA:
+        PARA j <- 1 ATE 2 FACA:
+            SE (m[i, j] > maior) ENTAO
+                maior <- m[i, j]
+            FIM_SE
+        FIM_PARA
+    FIM_PARA
+
+    ESCREVA "Maior elemento da matriz = ", maior
+FIM
