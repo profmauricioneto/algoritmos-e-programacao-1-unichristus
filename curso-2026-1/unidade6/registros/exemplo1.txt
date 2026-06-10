@@ -1,0 +1,17 @@
+ALGORITMO "trabalho_com_registros"
+DECLARE
+    alunos[5] REGISTRO (nome: LITERAL, matricula: INTEIRO, nota: REAL)
+    i: INTEIRO
+INICIO
+// comentario: preenchendo o array de registros
+PARA i <- 1 ATE 5 FACA:
+    ESCREVA "digite o nome do aluno: "
+    LEIA(alunos[i].nome)
+    ESCREVA "digite a matricula do aluno: "
+    LEIA(alunos[i].matricula)
+    ESCREVA "digite a nota do aluno: "
+    LEIA(alunos[i].nota)
+// comentario: apresentando os dados do array
+PARA i <- 1 ATE 5 FACA:
+    ESCREVA "nome: ", alunos[i].nome, " | matricula: ", alunos[i].matricula, " | nota: ", alunos[i].nota
+FIM_ALGORITMO

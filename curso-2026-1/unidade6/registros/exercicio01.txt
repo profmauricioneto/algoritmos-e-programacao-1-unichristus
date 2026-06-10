@@ -1,0 +1,56 @@
+ALGORITMO "estoque_produtos"
+
+    SUBALGORITMO cria_produto(codigo: LITERAL, preco: REAL,     quantidade: INTEIRO)
+        produto.codigo = codigo
+        produto.preco = preco
+        produto.quantidade = quantidade
+        RETORNE produto
+    FIM_SUBALGORITMO
+
+    SUBALGORITMO mostrar_produto(codigo: LITERAL)
+        PARA i <- 1 ATE 10 FACA:
+            SE (produtos[i].codigo = codigo) ENTAO
+                ESCREVA "Produto ID: ", ID
+                ESCREVA "codigo: ", produtos[i].codigo, " | preco: ", produtos[i].preco, " | quantidade: ", produtos[i].quantidade
+            FIM_SE
+        FIM_PARA
+    FIM_SUBALGORITMO
+
+    SUBALGORITMO buscar_produto(codigo: LITERAL)
+        PARA i <- 1 ATE 10 FACA
+            SE (produtos[i].codigo = codigo) ENTAO
+                RETORNE produtos[i]
+            FIM_SE
+        FIM_PARA
+    FIM_SUBALGORITMO
+
+DECLARE
+    produtos[10] REGISTRO (codigo: LITERAL, preco: REAL, quantidade: INTEIRO)
+    i, quantidade_total: INTEIRO
+    preco_total: REAL
+
+    // comentário: preenchendo o array de produtos
+    PARA i <- 1 ATE 10 FACA:
+        ESCREVA "digite o código do produto: "
+        LEIA (produtos[i].codigo)
+        ESCREVA "digite o preco do produto: "
+        LEIA (produtos[i].preco)
+        ESCREVA "digite a quantidade do produto: "
+        LEIA (produtos[i].quantidade)
+    FIM_PARA
+    
+    // comentário: percorrendo o array de produtos 
+    // e gerando o relatorio
+    preco_total = 0
+    quantidade_total = 0
+    PARA i <- 1 ATE 10 FACA:
+        ESCREVA "Produto ID: ", ID
+        ESCREVA "codigo: ", produtos[i].codigo, " | preco: ", produtos[i].preco, " | quantidade: ", produtos[i].quantidade
+
+        preco_total = preco_total + produtos[i].preco
+        quantidade_total = quantidade_total + produtos[i].quantidade
+    FIM_PARA
+    ESCREVA "Quantidade total em estoque: ", quantidade_total
+    ESCREVA "Preço total em estoque: ", preco_total
+
+FIM_ALGORITMO
