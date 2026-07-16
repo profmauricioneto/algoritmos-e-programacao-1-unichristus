@@ -1,8 +1,13 @@
+<div style="margin: 0 auto;">
+    <img src="./assets/logo_unichristus.jpg" style="width: 70%; height: auto;">
+</div>
+
 <h2 style="text-align: center">  
   <b>Algoritmos e Programação 1</b> 
   <br/>
   <b>Universidade Christus</b>
-        :octocat:
+  <div>:octocat:</div>
+        
 </h2>
 
 Este repositório tem o objetivo de auxiliar os alunos da disciplina de Algoritmos e Programação 1 da Universidade Christus.
