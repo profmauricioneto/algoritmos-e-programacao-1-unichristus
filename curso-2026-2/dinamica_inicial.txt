@@ -1,0 +1,92 @@
+FAZER UM SANDUICHE
+
+1- ANDO ATE A COZINHA
+2- PEGO O PACOTE DE PAO 
+3- ABRO O PACOTE
+4- PEGO UM PAO 
+5- PEGO UM PRATO
+6- COLOCO O PRATO NA MESA
+7- COLOCO O PAO NO PRATO
+8- VOU ATE A GELADEIRA
+9- ABRO A GELADEIRA
+10- PEGO O QUEIJO E O PRESUNTO 
+11- FECHO A GELADEIRA
+12- ANDO A MESA
+13- ABRO O PAO
+14- COLOCO O QUEIJO E PRESUNTO NO PAO
+15- FECHO O PAO 
+16- VOU ATE A GELADEIRA E GUARDO O QUEIJO E PRESUNTO 
+
+comer_banana
+Pegue e segure a banana com cuidado para não amassar o interior.
+Aperte o caule e puxe para baixo com cuidado para não amassar o interior.
+Puxe as outras tiras da casca para baixo com cuidado para não amassar o interior.
+Coma a banana.
+
+
+Passo a passo de como fazer um ovo
+1-pegue um ovo
+2-ligue o fogao
+3-pegue uma frigideira
+4-use margarina,oleo ou azeite de sua preferencia
+5-unte a frigideira com um desses 3
+6-quebre o ovo na frigideira no fogo medio ou baixo
+7-misture ou deixe ele inteiro
+8-coloque sal
+9-esperar de 3 a 5 minutos ou menos se quiser deixar ele ao ponto ou mais passsado
+10-desligue o fogao
+11-fim
+
+estenter roupas no varal
+1-ir até a máquina de lavar
+2-observar se ja terminou o processo de lavagem
+3-abrir a tampa
+4-retirar a roupa limpa
+5-levar até o varal
+6-estender uma por uma 
+7-colocar o pregador em cada peça
+8-assegurar que esteja preso 
+
+Fazer café
+1 pega a chaleira
+2 enche a chaleira de agua
+3 liga o fogão, põe a chaleira no fogo
+4 pega o filtro para fitrar o cafe
+5 coloca o pó de cafe dentro do filtro 
+6 tira a chaleira do fogão
+7 põe a agua no filtro
+8 pega a garrafa de café
+9 tira a tampa da garrafa
+10 coloca o café na garrafa
+11 tampa a garrafa de café
+12 lava o filtro de café   
+
+
+Comando tomar banho -
+1- pegue uma toalha
+2- vá até o banheiro
+3- abra a porta do banheiro
+4- entre no banheiro
+5- feche a porta do banheiro
+6- tire a sua roupa
+7- ajuste a temperatura do chuveiro
+8- ligue o chuveiro (girando a torneira no sentido anti-horário)
+9- vá para de baixo do chuveiro
+10- desligue o chuveiro
+11- pegue o sabonete
+12- passe pelo seu corpo
+13- guarde o sabonete
+14- re-ligue o chuveiro da forma anteriormente dita
+15- se enxague até não ter mais sabonete no seu corpo
+16- desligue o chuveiro (girando a torneira no sentido horário)
+17- pegue a toalha
+18- se seque passando a toalha no seu corpo até que esteja totalmente seco
+19- se enrole na toalha
+20- abra a porta do banheiro
+21- saia do banheiro
+22- feche a porta do banheiro
+23- pegue uma muda nova de roupas
+24- tire a toalha
+25- vista a muda nova de roupas
+26- pegue a toalha
+27- guarde a toalha em um varal
