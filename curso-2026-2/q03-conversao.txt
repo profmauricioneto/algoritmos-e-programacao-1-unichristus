@@ -1,0 +1,15 @@
+DESCRIÇÃO NARRATIVA
+
+Passo 1: receber a temperatura em Celsius
+Passo 2: multiplicar a temperatura em Celsius por 9/5 e, depois, somar com 32.
+Passo 3: apresentar o valor convertido para farenheit
+
+PSEUDOCÓDIGO
+
+ALGORITMO "conversao_temperatura"
+    DECLARE celsius, fah : numéricos
+    ESCREVA("digite a temperatura em Celsius: ")
+    LEIA(celsius)
+    fah = (celsius * 9/5) + 32
+    ESCREVA("Valor em Fahrenheit: ", fah)
+FIM_ALGORITMO
