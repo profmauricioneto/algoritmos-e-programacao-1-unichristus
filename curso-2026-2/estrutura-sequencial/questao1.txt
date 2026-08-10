@@ -1,0 +1,23 @@
+ALGORITMO
+DECLARE qtd_hamburguer : NUMERICO
+        qtd_refrigerante : NUMERICO
+        qtd_batata : NUMERICO
+        preco_total : NUMERICO
+        hamburguer <- 18
+        refrigerante <- 6
+        batata_frita <- 9
+    
+    // entrada de dados
+    ESCREVA('Entre com a quantidade de hamburguers: ')
+    LEIA(qtd_hamburguer)
+    ESCREVA('Entre com a quantidade de Refrigerante: ')
+    LEIA(qtd_refrigerante)
+    ESCREVA('Entre com a quantidade de Batata Frita: ')
+    LEIA(qtd_batata)
+
+    // processamento
+    preco_total <- (qtd_batata*batata_frita) + (qtd_hamburguer*hamburguer) + (qtd_refrigerante*refrigerante)
+
+    // saída de dados
+    ESCREVA('Valor Total é: ', preco_total)
+FIM_ALGORITMO
