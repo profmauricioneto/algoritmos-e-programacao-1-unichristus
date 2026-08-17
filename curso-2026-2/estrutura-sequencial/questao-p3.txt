@@ -1,0 +1,20 @@
+ALGORITMO
+    DECLARE nota1: NUMERICO
+            nota2: NUMERICO
+            peso1: NUMERICO
+            peso2: NUMERICO
+            media_pond: NUMERICO
+
+    ESCREVA("Digite nota 1: ")
+    LEIA(nota1)
+    ESCREVA("Digite peso 1: ")
+    LEIA(peso1)
+    ESCREVA("Digite nota 2: ")
+    LEIA(nota2)
+    ESCREVA("Digite peso 2: ")
+    LEIA(peso2)
+
+    media_pond = (nota1 * peso1 + nota2 * peso2)/(peso1 + peso2)
+
+    ESCREVA("A media do Aluno é: ", media_pond)
+FIM_ALGORITMO

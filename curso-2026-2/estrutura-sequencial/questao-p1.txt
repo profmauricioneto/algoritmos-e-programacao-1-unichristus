@@ -1,0 +1,33 @@
+ALGORITMO
+    DECLARE nome: LITERAL
+            rg: LITERAL
+            endereco: LITERAL
+            telefone: LITERAL
+            email: LITERAL
+            curso: LITERAL
+            periodo: LITERAL
+
+    ESCREVA("Digite seu nome: ")
+    LEIA(nome)
+    ESCREVA("Digite seu RG: ")
+    LEIA(rg)
+    ESCREVA("Digite seu endereco: ")
+    LEIA(endereco)
+    ESCREVA("Digite seu email: ")
+    LEIA(email)
+    ESCREVA("Digite seu telefone: ")
+    LEIA(telefone)
+    ESCREVA("Digite seu curso: ")
+    LEIA(curso)
+    ESCREVA("Digite seu período: ")
+    LEIA(periodo)
+
+    ESCREVA("FICHA DO USUARIO")
+    ESCREVA("Nome: ", nome)
+    ESCREVA("RG: ", rg)
+    ESCREVA("Endereço: ", endereco)
+    ESCREVA("Email: ", email)
+    ESCREVA("Curso: ", curso)
+    ESCREVA("Telefone: ", telefone)
+    ESCREVA("Período: ", periodo)
+FIM_ALGORITMO
