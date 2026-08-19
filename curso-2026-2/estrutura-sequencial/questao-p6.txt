@@ -1,0 +1,14 @@
+ALGORITMO calculo_aumento_salarios
+    DECLARE salario_base, porcentagem, aumento, salario_novo: NUMERICO
+
+    ESCREVA("Salario base: ")
+    LEIA(salario_base)
+    ESCREVA("Porcentagem de aumento: ")
+    LEIA(porcentagem)
+
+    aumento = salario_base * (porcentagem/100)
+    salario_novo = salario_base + aumento
+
+    ESCREVA("Aumento calculado: ", aumento)
+    ESCREVA("Novo salário: ", salario_novo)
+FIM_ALGORITMO
