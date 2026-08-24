@@ -1,0 +1,18 @@
+ALGORITMO situacao_aluno
+    DECLARE nota1, nota2, media: NUMERICO
+
+    ESCREVA("Digite a nota 1: ")
+    LEIA(nota1)
+    ESCREVA("Digite a nota 2: ")
+    LEIA(nota2)
+
+    media = (nota1 + nota2)/2
+    ESCREVA("A media é ", media)
+
+    SE (media >= 7.0)
+    ENTAO ESCREVA("aprovado!")
+    SENAO SE (media < 4.0)
+    ENTAO ESCREVA("reprovado")
+    SENAO ESCREVA("final")
+
+FIM_ALGORITMO

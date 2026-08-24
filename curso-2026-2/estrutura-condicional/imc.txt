@@ -1,0 +1,15 @@
+ALGORITMO calculo-imc
+    DECLARE peso, altura, imc NUMERICO
+
+    ESCREVA("Digite seu peso atual (kg): ")
+    LEIA(peso)
+    ESCREVA("Digite sua altura (m): ")
+    LEIA(altura)
+
+    imc = peso / (altura * altura)
+    ESCREVA("Valor do IMC = ", imc)
+
+    SE (imc >= 25) 
+    ENTAO ESCREVA("Peso em Excesso!")
+    SENAO ESCREVA("Saudável!")
+FIM_ALGORITMO
