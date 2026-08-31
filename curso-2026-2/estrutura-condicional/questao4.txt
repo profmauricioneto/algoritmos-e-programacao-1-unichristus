@@ -1,0 +1,19 @@
+ALGORITMO calculo_peso_ideal
+    DECLARE: peso_ideal, altura: NUMERICO
+             sexo: LITERAL
+
+    ESCREVA("Digite o seu sexo [M/F]: ")
+    LEIA(sexo)
+    ESCREVA("Digite a sua altura: ")
+    LEIA(altura)
+    peso_ideal = 0
+
+    SE sexo == 'M' ENTAO
+        peso_ideal = (72,7 × h) − 58
+    SENAO SE sexo == 'F' ENTAO
+        peso_ideal = (62,1 × h) − 44,7
+    SENAO
+        ESCREVA("Genero Inválido!")
+    
+    ESCREVA("O peso ideal é: ", peso_ideal)
+FIM_ALGORITMO
