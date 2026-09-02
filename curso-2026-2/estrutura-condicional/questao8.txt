@@ -1,0 +1,35 @@
+ALGORITMO equacao_segundo_grau
+
+    DECLARE a, b, c, delta, x1, x2: NUMERICO
+
+    ESCREVA("A = ")
+    LEIA(a)
+    ESCREVA("B = ")
+    LEIA(b)
+    ESCREVA("C = ")
+    LEIA(c)
+    
+    SE a = 0
+    ENTAO ESCREVA("Nao existe equação do segundo grau")
+    SENAO
+        INICIO
+            delta <- b*b - 4*a*c
+            ESCREVA("Valor de Delta = ", delta)
+            
+            SE delta < 0 
+            ENTAO ESCREVA("Não existe raizes reais")
+            SENAO SE delta = 0
+            ENTAO
+                INICIO
+                    x1 <- (-b + sqrt(delta))/2*a
+                    ESCREVA("Só possui uma única raiz real = ", x1)
+                FIM
+            SENAO
+                INICIO
+                    x1 <- (-b + sqrt(delta))/2*a
+                    x2 <- (-b - sqrt(delta))/2*a
+                    ESCREVA("Possui duas raizes reais.")
+                    ESCREVA("Raiz 1 = ", x1, " Raiz 2 = ", x2)
+                FIM
+        FIM
+FIM_ALGORITMO
