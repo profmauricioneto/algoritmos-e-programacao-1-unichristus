@@ -1,0 +1,31 @@
+ALGORITMO
+    DECLARE num, i, cont_par : NUMERICO
+
+    cont_par <- 0
+    PARA i <- 1 ATE 5 FAÇA [PASSO 1]
+        INICIO
+            ESCREVA("Digite um número: ")
+            LEIA(num)
+
+            SE num MOD 2 = 0 
+                ENTAO cont_par <- cont_par + 1
+        FIM_PARA
+    ESCREVA("Quantidade de valores pares digitados = ", cont_par)
+FIM_ALGORITMO
+
+
+ALGORITMO
+    DECLARE num, i, cont_par : NUMERICO
+
+    cont_par <- 0
+    i <- 1
+    ENQUANTO i <= 5 FAÇA
+        INICIO
+            ESCREVA("Digite um número: ")
+            LEIA(num)
+            SE num MOD 2 = 0
+                ENTAO cont_par <- cont_par + 1
+            i <- i + 1
+        FIM_ENQUANTO
+    ESCREVA("A quantidade de numeros pares = ", cont_par)
+FIM_ALGORITMO

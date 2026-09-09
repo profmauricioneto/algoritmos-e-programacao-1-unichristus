@@ -1,0 +1,17 @@
+ALGORITMO
+    DECLARE i, num, fat: NUMERICO
+
+    ESCREVA("Qual numero queres o fatorial?")
+    LEIA(num)
+    fat = 1
+    SE num < 0 ENTAO 
+        ESCREVA("Não existe fatorial de negativos!")
+    SENAO SE num = 0 ENTAO
+        fat = 1
+    SENAO
+        INICIO
+            PARA i <- 1 ATE num - 1 FAÇA [PASSO 1]
+                fat <- fat*i
+            ESCREVA("O fatorial de ", num, " é ", fat)
+        FIM
+FIM_ALGORITMO
