@@ -1,0 +1,24 @@
+ALGORITMO
+
+    DECLARE valores[10]: NUMERICO(INTEIRO)
+            contPar : NUMERICO
+            contImpar : NUMERICO
+
+    contPar <- 0
+    contImpar <- 0
+    PARA i <- 0 ATE 9 FACA:
+        ESCREVA("Digite o valor do indice ", i, ": ")
+        LEIA(valores[i])
+    FIM_PARA
+
+    PARA i <- 0 ATE 9 FACA:
+        SE (valores[i] % 2 = 0) ENTAO
+            contPar = contPar + 1
+        SENAO
+            contImpar = contImpar + 1
+    FIM_PARA
+
+    ESCREVA("Quantidade de Pares: ", contPar)
+    ESCREVA("Quantidade de Impares: ", contImpar)
+
+FIM_ALGORITMO

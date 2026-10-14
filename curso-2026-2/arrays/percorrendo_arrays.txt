@@ -1,0 +1,12 @@
+ALGORITMO percorrer_arrays
+
+DECLARE notas[5]: NUMERICO
+
+PARA i <- 0 ATE 4 FACA:
+    ESCREVA("Digite o valor do indice " + i + " : ")
+    LEIA(notas[i])
+    
+PARA i <- 0 ATE 4 FACA:
+    ESCREVA(notas[i])
+
+FIM_ALGORITMO
