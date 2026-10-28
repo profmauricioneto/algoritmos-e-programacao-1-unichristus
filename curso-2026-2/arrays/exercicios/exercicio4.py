@@ -15,7 +15,7 @@ while(True):
             if codigo_produtos[i] == valor_codigo:
                 encontrado = True         
                 # percorrer o array de códigos e verificar se o código existe ou não
-                 # perguntar qual a quantidade e verificar se quantidade é o suficiente (verificando no array de quantidade)
+                # perguntar qual a quantidade e verificar se quantidade é o suficiente (verificando no array de quantidade)
                 # atualizar o array de quantidade caso seja o valor suficiente!
                 qtd = int(input('Quantidade requerida: '))
                 if (qtd <= qtd_produtos[i]):
