@@ -1,0 +1,22 @@
+ALGORITMO preenchendo_matriz
+
+DECLARE matriz[3, 3]: NUMERICOS
+DECLARE i, j: NUMERICOS
+
+// preencham a matriz
+PARA i <- 1 ATE 3 FACA
+    PARA j <- 1 ATE 3 FACA
+        ESCREVA("Valor do indice:" )
+        LEIA(matriz[i, j])
+    FIM_PARA
+FIM_PARA
+
+// percorram e apresentem os dados preenchidos da matriz
+PARA i <- 1 ATE 3 FACA
+    PARA j <- 1 ATE 3 FACA
+        ESCREVA(matriz[i, j])
+    FIM_PARA
+FIM_PARA
+
+
+FIM_ALGORITMO
